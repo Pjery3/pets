@@ -428,7 +428,7 @@
                     .orange {
                         color: $orange;
                     }
-                    .green{
+                    .green {
                         color: $green;
                     }
                 }
@@ -442,25 +442,25 @@
                     font-size: 16px;
                 }
                 &__adv {
-                    li{
+                    li {
                         font-size: 20px;
                         margin-bottom: 20px;
                         color: #000;
-                        object{}
-                        span{
+                        object {
+                        }
+                        span {
                             margin-left: 15px;
                         }
                     }
                 }
                 &__btn {
                     margin-top: 45px;
-                    a{
-                       padding: 10px 20px;
-                    background-color: $orange; 
-                    border-radius: 3px;
-                    font-size: 20px;
+                    a {
+                        padding: 10px 20px;
+                        background-color: $orange;
+                        border-radius: 3px;
+                        font-size: 20px;
                     }
-                    
                 }
             }
             .about-images {
@@ -482,9 +482,74 @@
             }
         }
     }
+
+    .services {
+        padding: 100px 0 95px;
+        text-align: center;
+        background-color: #f2f2f4;
+        &-pre {
+            color: $green;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        &-title {
+            color: #000;
+            font-size: 55px;
+            font-weight: 800;
+            margin-bottom: 45px;
+            span{
+                color: $orange;
+            }
+        }
+        &-items {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .services-item {
+                max-width: 350px;
+                background-color: #fff;
+                margin-bottom: 30px;
+                padding: 55px 50px 50px;
+                &__img {
+                    margin-bottom: 20px;
+                    i{
+                        &:before{
+                          font-size: 75px; 
+                          color: $green;  
+                          margin: 0 auto;
+                        }
+                       
+                    }
+                    
+                }
+                &__title {
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: #000;
+                }
+                &__text {
+                    margin-bottom: 20px;
+                }
+                &__link {
+                    a{
+                        color: $orange;
+                        padding: 10px 50px;
+                        font-weight: 700;
+                        &:hover{
+                            text-decoration:underline;
+                            color: #c53f12;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.svg-inline--fa .fa-check-double .fa-w-16{
-   fill: #46ad5b;
+.svg-inline--fa .fa-check-double .fa-w-16 {
+    fill: #46ad5b;
 }
 
 @import "_media.scss";
