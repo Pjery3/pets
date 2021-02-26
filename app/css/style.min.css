@@ -209,7 +209,9 @@ img {
   vertical-align: middle;
 }
 
-button {
+button,
+input,
+select {
   border: none;
   outline: none;
   padding: 0;
@@ -575,4 +577,178 @@ button {
 
 .main-content .animal-slider__items .animal-slider__item .animal-slider__info-btns a:hover {
   border-color: #dc4614;
+}
+
+.main-content .form-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .form-inner__inputs {
+  padding: 90px 0 70px;
+  max-width: 445px;
+  width: 100%;
+  background-color: #ed6436;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-content .form-inner__inputs input,
+.main-content .form-inner__inputs select {
+  max-width: 350px;
+  width: 100%;
+  padding: 15px 25px;
+  border-radius: 3px;
+  color: #7a7979;
+}
+
+.main-content .form-inner__inputs input::-webkit-input-placeholder, .main-content .form-inner__inputs select::-webkit-input-placeholder {
+  color: #7a7979;
+}
+
+.main-content .form-inner__inputs input::-moz-placeholder, .main-content .form-inner__inputs select::-moz-placeholder {
+  color: #7a7979;
+}
+
+.main-content .form-inner__inputs input:-ms-input-placeholder, .main-content .form-inner__inputs select:-ms-input-placeholder {
+  color: #7a7979;
+}
+
+.main-content .form-inner__inputs input::-ms-input-placeholder, .main-content .form-inner__inputs select::-ms-input-placeholder {
+  color: #7a7979;
+}
+
+.main-content .form-inner__inputs input::placeholder,
+.main-content .form-inner__inputs select::placeholder {
+  color: #7a7979;
+}
+
+.main-content .form-inner__inputs input {
+  margin-bottom: 17px;
+}
+
+.main-content .form-inner__inputs select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+}
+
+.main-content .form-inner__inputs-select {
+  position: relative;
+  margin-bottom: 16px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.main-content .form-inner__inputs-select:after {
+  position: absolute;
+  content: "\e904";
+  font-family: "icomoon" !important;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.main-content .form-inner__inputs button {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 40px;
+  max-width: 350px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.main-content .form-inner__info {
+  padding: 65px 65px 70px;
+}
+
+.main-content .form-inner__info-pre {
+  color: #46ad5b;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.main-content .form-inner__info-title {
+  font-size: 55px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.main-content .form-inner__info-title span {
+  color: #ed6436;
+}
+
+.main-content .form-inner__info-descr {
+  margin-bottom: 25px;
+}
+
+.main-content .form-inner__info-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 570px;
+}
+
+.main-content .form-inner__info-items .form-item {
+  max-width: 250px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.main-content .form-inner__info-items .form-item__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-content .form-inner__info-items .form-item__top i:before {
+  font-size: 40px;
+  color: #46ad5b;
+  margin: 0 auto;
+}
+
+.main-content .form-inner__info-items .form-item__top .form-item__title {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #000;
+}
+
+.main-content .form-inner__info-items .form-item__text {
+  margin-bottom: 15px;
 }
