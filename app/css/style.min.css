@@ -579,6 +579,10 @@ select {
   border-color: #dc4614;
 }
 
+.main-content .form {
+  background-color: #f2f2f4;
+}
+
 .main-content .form-inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -751,4 +755,99 @@ select {
 
 .main-content .form-inner__info-items .form-item__text {
   margin-bottom: 15px;
+}
+
+.main-content .about {
+  padding: 100px 0;
+}
+
+.main-content .about-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .about-inner .about-info {
+  max-width: 570px;
+}
+
+.main-content .about-inner .about-info__pre {
+  color: #46ad5b;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.main-content .about-inner .about-info__title {
+  font-size: 55px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.main-content .about-inner .about-info__title .orange {
+  color: #ed6436;
+}
+
+.main-content .about-inner .about-info__title .green {
+  color: #46ad5b;
+}
+
+.main-content .about-inner .about-info__descr {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-content .about-inner .about-info__text {
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.main-content .about-inner .about-info__adv li {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.main-content .about-inner .about-info__adv li span {
+  margin-left: 15px;
+}
+
+.main-content .about-inner .about-info__btn {
+  margin-top: 45px;
+}
+
+.main-content .about-inner .about-info__btn a {
+  padding: 10px 20px;
+  background-color: #ed6436;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.main-content .about-inner .about-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 445px;
+}
+
+.main-content .about-inner .about-images__img-100 img {
+  max-width: 444px;
+}
+
+.main-content .about-inner .about-images__img-50 img {
+  max-width: 222px;
+}
+
+.svg-inline--fa .fa-check-double .fa-w-16 {
+  fill: #46ad5b;
 }

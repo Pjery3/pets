@@ -293,6 +293,7 @@
     }
 
     .form {
+        background-color: #f2f2f4;
         &-inner {
             display: flex;
             &__inputs {
@@ -405,6 +406,85 @@
             }
         }
     }
+    .about {
+        padding: 100px 0;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .about-info {
+                max-width: 570px;
+                &__pre {
+                    color: $green;
+                    font-weight: 700;
+                    font-size: 28px;
+                    margin-bottom: 20px;
+                }
+                &__title {
+                    font-size: 55px;
+                    font-weight: 800;
+                    color: #000;
+                    margin-bottom: 35px;
+                    .orange {
+                        color: $orange;
+                    }
+                    .green{
+                        color: $green;
+                    }
+                }
+                &__descr {
+                    margin-bottom: 25px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+                &__text {
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                }
+                &__adv {
+                    li{
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        color: #000;
+                        object{}
+                        span{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+                &__btn {
+                    margin-top: 45px;
+                    a{
+                       padding: 10px 20px;
+                    background-color: $orange; 
+                    border-radius: 3px;
+                    font-size: 20px;
+                    }
+                    
+                }
+            }
+            .about-images {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 445px;
+                &__img {
+                    &-100 {
+                        img {
+                            max-width: 444px;
+                        }
+                    }
+                    &-50 {
+                        img {
+                            max-width: 222px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.svg-inline--fa .fa-check-double .fa-w-16{
+   fill: #46ad5b;
 }
 
 @import "_media.scss";
