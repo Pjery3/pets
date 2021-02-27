@@ -357,11 +357,7 @@
                     margin-bottom: 20px;
                 }
                 &-title {
-                    color: #000;
                     margin-bottom: 25px;
-                    span {
-                        color: $orange;
-                    }
                 }
                 &-descr {
                     margin-bottom: 25px;
@@ -486,11 +482,7 @@
             margin-bottom: 30px;
         }
         &-title {
-            color: #000;
             margin-bottom: 45px;
-            span {
-                color: $orange;
-            }
         }
         &-items {
             display: flex;
@@ -551,11 +543,7 @@
                     margin-bottom: 15px;
                 }
                 &__title {
-                    color: #000;
                     margin-bottom: 30px;
-                    span {
-                        color: $orange;
-                    }
                 }
                 &__descr {
                     margin-bottom: 35px;
@@ -594,11 +582,7 @@
             margin-bottom: 20px;
         }
         &-title {
-            color: #000;
             margin-bottom: 60px;
-            span {
-                color: $orange;
-            }
         }
         &-items {
             display: flex;
@@ -678,11 +662,11 @@
                             }
                             &.basic.spa,
                             &.basic.veterinary,
-                            &.standart.veterinary{
-                                span{
+                            &.standart.veterinary {
+                                span {
                                     position: relative;
                                     padding-left: 20px;
-                                    &:before{
+                                    &:before {
                                         position: absolute;
                                         content: "\f00d";
                                         font-family: "icomoon" !important;
@@ -703,8 +687,8 @@
                             background-color: $green;
                             white-space: nowrap;
                             color: #000;
-                            transition: .2s;
-                            &:hover{
+                            transition: 0.2s;
+                            &:hover {
                                 color: #fff;
                                 background-color: #4ab660;
                             }
@@ -722,11 +706,124 @@
                             a {
                                 color: #fff;
                                 background-color: $orange;
-                                &:hover{
+                                &:hover {
                                     background-color: #e84a15;
                                     color: #fff;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team {
+        padding: 100px 0 90px;
+        text-align: center;
+        &-pre {
+            margin-bottom: 20px;
+        }
+        &-title {
+            margin-bottom: 50px;
+        }
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 15px;
+            padding: 0 15px;
+            .team-item {
+                max-width: 255px;
+                &__img {
+                    img {
+                        max-width: 255px;
+                    }
+                }
+                &__info {
+                    background-color: rgb(233, 231, 231);
+                    padding: 24px 0px;
+                    overflow: hidden;
+                    position: relative;
+                    &-name {
+                        font-size: 20px;
+                        color: #000;
+                        margin-bottom: 10px;
+                        font-weight: 700;
+                    }
+                    &-pos {
+                        font-weight: 600;
+                    }
+                    &-social {
+                        position: absolute;
+                        bottom: -100px;
+                        left: 0;
+                        right: 0;
+                        background-color: #000;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        height: 100px;
+                        align-items: center;
+                        transition: .4s;
+                        li {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            a {
+                                position: relative;
+                                padding: 8px 19px;
+                                border: 1px solid $orange;
+                                border-radius: 50%;
+                                background-color: #000;
+                                &:before {
+                                    position: absolute;
+                                    font-family: "icomoon" !important;
+                                    left: 50%;
+                                    top: 50%;
+                                    transform: translate(-50%, -50%);
+                                    color: $orange;
+                                }
+                                &:hover{
+                                    background-color: $orange;
+                                    transition: .2s;
+                                    &:before {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            &.twitter {
+                                a {
+                                    &:before {
+                                        content: "\f099";
+                                    }
+                                }
+                            }
+                            &.facebook {
+                                a {
+                                    &:before {
+                                        content: "\f09a";
+                                    }
+                                }
+                            }
+                            &.linkedin {
+                                a {
+                                    &:before {
+                                        content: "\f0e1";
+                                    }
+                                }
+                            }
+                            &.instagram {
+                                a {
+                                    &:before {
+                                        content: "\f16d";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    .team-item__info{
+                        &-social{
+                            bottom: 0;
                         }
                     }
                 }

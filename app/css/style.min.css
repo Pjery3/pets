@@ -238,6 +238,11 @@ select {
 .title {
   font-size: 55px;
   font-weight: 800;
+  color: #000;
+}
+
+.title span {
+  color: #ed6436;
 }
 
 .faq {
@@ -702,12 +707,7 @@ select {
 }
 
 .main-content .form-inner__info-title {
-  color: #000;
   margin-bottom: 25px;
-}
-
-.main-content .form-inner__info-title span {
-  color: #ed6436;
 }
 
 .main-content .form-inner__info-descr {
@@ -865,12 +865,7 @@ select {
 }
 
 .main-content .services-title {
-  color: #000;
   margin-bottom: 45px;
-}
-
-.main-content .services-title span {
-  color: #ed6436;
 }
 
 .main-content .services-items {
@@ -949,12 +944,7 @@ select {
 }
 
 .main-content .choose-inner .choose-info__title {
-  color: #000;
   margin-bottom: 30px;
-}
-
-.main-content .choose-inner .choose-info__title span {
-  color: #ed6436;
 }
 
 .main-content .choose-inner .choose-info__descr {
@@ -1007,12 +997,7 @@ select {
 }
 
 .main-content .price-title {
-  color: #000;
   margin-bottom: 60px;
-}
-
-.main-content .price-title span {
-  color: #ed6436;
 }
 
 .main-content .price-items {
@@ -1131,9 +1116,9 @@ select {
   background-color: #46ad5b;
   white-space: nowrap;
   color: #000;
-  -webkit-transition: .2s;
-  -o-transition: .2s;
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .main-content .price-items .price-item__bot-btn a:hover {
@@ -1153,4 +1138,131 @@ select {
 .main-content .price-items .price-item.price-item--orange .price-item__bot-btn a:hover {
   background-color: #e84a15;
   color: #fff;
+}
+
+.main-content .team {
+  padding: 100px 0 90px;
+  text-align: center;
+}
+
+.main-content .team-pre {
+  margin-bottom: 20px;
+}
+
+.main-content .team-title {
+  margin-bottom: 50px;
+}
+
+.main-content .team-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+  padding: 0 15px;
+}
+
+.main-content .team-items .team-item {
+  max-width: 255px;
+}
+
+.main-content .team-items .team-item__img img {
+  max-width: 255px;
+}
+
+.main-content .team-items .team-item__info {
+  background-color: #e9e7e7;
+  padding: 24px 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-content .team-items .team-item__info-name {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.main-content .team-items .team-item__info-pos {
+  font-weight: 600;
+}
+
+.main-content .team-items .team-item__info-social {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s;
+}
+
+.main-content .team-items .team-item__info-social li {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.main-content .team-items .team-item__info-social li a {
+  position: relative;
+  padding: 8px 19px;
+  border: 1px solid #ed6436;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.main-content .team-items .team-item__info-social li a:before {
+  position: absolute;
+  font-family: "icomoon" !important;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ed6436;
+}
+
+.main-content .team-items .team-item__info-social li a:hover {
+  background-color: #ed6436;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.main-content .team-items .team-item__info-social li a:hover:before {
+  color: #fff;
+}
+
+.main-content .team-items .team-item__info-social li.twitter a:before {
+  content: "\f099";
+}
+
+.main-content .team-items .team-item__info-social li.facebook a:before {
+  content: "\f09a";
+}
+
+.main-content .team-items .team-item__info-social li.linkedin a:before {
+  content: "\f0e1";
+}
+
+.main-content .team-items .team-item__info-social li.instagram a:before {
+  content: "\f16d";
+}
+
+.main-content .team-items .team-item:hover .team-item__info-social {
+  bottom: 0;
 }
