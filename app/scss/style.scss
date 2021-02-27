@@ -763,7 +763,7 @@
                         justify-content: center;
                         height: 100px;
                         align-items: center;
-                        transition: .4s;
+                        transition: 0.4s;
                         li {
                             padding-left: 5px;
                             padding-right: 5px;
@@ -781,9 +781,9 @@
                                     transform: translate(-50%, -50%);
                                     color: $orange;
                                 }
-                                &:hover{
+                                &:hover {
                                     background-color: $orange;
-                                    transition: .2s;
+                                    transition: 0.2s;
                                     &:before {
                                         color: #fff;
                                     }
@@ -820,12 +820,86 @@
                         }
                     }
                 }
-                &:hover{
-                    .team-item__info{
-                        &-social{
+                &:hover {
+                    .team-item__info {
+                        &-social {
                             bottom: 0;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .clients {
+        padding: 100px 0 150px;
+        text-align: center;
+        background-color: #f2f2f4;
+        &-pre {
+            margin-bottom: 20px;
+        }
+        &-title {
+            margin-bottom: 50px;
+        }
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            .slick-dots{
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                bottom: -50px;
+                left: 0;
+                right: 0;
+                li{
+                    background-color: #ccc;
+                    padding: 0px 9px;
+                    border-radius: 50%;
+                    margin: 0 8px;
+                    button{
+                        font-size: 0;
+                    }
+                    &.slick-active{
+                        background-color: $orange;
+                    }
+                }
+            }
+            .slick-track{
+                display: flex;
+                justify-content: space-between;
+                outline: none;
+                transition: all 1s;
+            }
+            .clients-item {
+                max-width: 350px;
+                outline: none;
+                background-color: #fff;
+                
+                &__top {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    &-img {
+                    }
+                    &-info {
+                        margin-left: 20px;
+                        .name {
+                            margin-bottom: 15px;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                        .pos {
+                            text-align-last: left;
+                        }
+                    }
+                }
+                &__text {
+                    text-align: left;
+                    padding: 0 20px;
+                    margin-bottom: 25px;
+                    font-size: 17px;
+                    line-height: 25px;
                 }
             }
         }
