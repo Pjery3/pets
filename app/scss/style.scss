@@ -611,6 +611,7 @@
                     padding: 50px 100px;
                     position: relative;
                     margin-bottom: 25px;
+                    min-height: 220px;
                     &-overlay {
                         content: "";
                         position: absolute;
@@ -655,7 +656,11 @@
                             &:last-child {
                                 border-bottom: 0;
                             }
-                            &.feeding {
+                            &.feeding,
+                            &.boarding,
+                            &.standart.spa,
+                            &.premium.spa,
+                            &.premium.veterinary {
                                 span {
                                     position: relative;
                                     padding-left: 25px;
@@ -667,6 +672,25 @@
                                         top: -50%;
                                         transform: translateY(50%);
                                         color: $green;
+                                        font-size: 19px;
+                                    }
+                                }
+                            }
+                            &.basic.spa,
+                            &.basic.veterinary,
+                            &.standart.veterinary{
+                                span{
+                                    position: relative;
+                                    padding-left: 20px;
+                                    &:before{
+                                        position: absolute;
+                                        content: "\f00d";
+                                        font-family: "icomoon" !important;
+                                        left: 0;
+                                        top: -50%;
+                                        transform: translateY(50%);
+                                        color: red;
+                                        font-size: 19px;
                                     }
                                 }
                             }

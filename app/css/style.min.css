@@ -1034,6 +1034,7 @@ select {
   padding: 50px 100px;
   position: relative;
   margin-bottom: 25px;
+  min-height: 220px;
 }
 
 .main-content .price-items .price-item__top-overlay {
@@ -1085,12 +1086,12 @@ select {
   border-bottom: 0;
 }
 
-.main-content .price-items .price-item__bot-adv li.feeding span {
+.main-content .price-items .price-item__bot-adv li.feeding span, .main-content .price-items .price-item__bot-adv li.boarding span, .main-content .price-items .price-item__bot-adv li.standart.spa span, .main-content .price-items .price-item__bot-adv li.premium.spa span, .main-content .price-items .price-item__bot-adv li.premium.veterinary span {
   position: relative;
   padding-left: 25px;
 }
 
-.main-content .price-items .price-item__bot-adv li.feeding span:before {
+.main-content .price-items .price-item__bot-adv li.feeding span:before, .main-content .price-items .price-item__bot-adv li.boarding span:before, .main-content .price-items .price-item__bot-adv li.standart.spa span:before, .main-content .price-items .price-item__bot-adv li.premium.spa span:before, .main-content .price-items .price-item__bot-adv li.premium.veterinary span:before {
   position: absolute;
   content: "\f00c";
   font-family: "icomoon" !important;
@@ -1100,6 +1101,25 @@ select {
       -ms-transform: translateY(50%);
           transform: translateY(50%);
   color: #46ad5b;
+  font-size: 19px;
+}
+
+.main-content .price-items .price-item__bot-adv li.basic.spa span, .main-content .price-items .price-item__bot-adv li.basic.veterinary span, .main-content .price-items .price-item__bot-adv li.standart.veterinary span {
+  position: relative;
+  padding-left: 20px;
+}
+
+.main-content .price-items .price-item__bot-adv li.basic.spa span:before, .main-content .price-items .price-item__bot-adv li.basic.veterinary span:before, .main-content .price-items .price-item__bot-adv li.standart.veterinary span:before {
+  position: absolute;
+  content: "\f00d";
+  font-family: "icomoon" !important;
+  left: 0;
+  top: -50%;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  color: red;
+  font-size: 19px;
 }
 
 .main-content .price-items .price-item__bot-btn {
