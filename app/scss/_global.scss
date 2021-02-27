@@ -1,53 +1,61 @@
-html{
+html {
     box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
 
-body{
-    font-family: 'Nunito', sans-serif;
+body {
+    font-family: "Nunito", sans-serif;
     font-weight: 400;
     text-align: left;
     color: #777;
     font-size: 16px;
 }
 
-a{
+a {
     color: #fff;
     text-decoration: none;
     outline: none;
 }
 
 ul,
-li{
+li {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     vertical-align: middle;
 }
 
 button,
 input,
-select{
+select {
     border: none;
     outline: none;
     padding: 0;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0 15px;
     margin: 0 auto;
     width: 100%;
 }
 
-.container{
-    max-width: 1110px;
+.container {
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+.pre-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+.title {
+    font-size: 55px;
+    font-weight: 800;
 }

@@ -357,8 +357,6 @@
                     margin-bottom: 20px;
                 }
                 &-title {
-                    font-size: 55px;
-                    font-weight: 800;
                     color: #000;
                     margin-bottom: 25px;
                     span {
@@ -416,13 +414,9 @@
                 max-width: 570px;
                 &__pre {
                     color: $green;
-                    font-weight: 700;
-                    font-size: 28px;
                     margin-bottom: 20px;
                 }
                 &__title {
-                    font-size: 55px;
-                    font-weight: 800;
                     color: #000;
                     margin-bottom: 35px;
                     .orange {
@@ -489,16 +483,12 @@
         background-color: #f2f2f4;
         &-pre {
             color: $green;
-            font-size: 25px;
-            font-weight: 700;
             margin-bottom: 30px;
         }
         &-title {
             color: #000;
-            font-size: 55px;
-            font-weight: 800;
             margin-bottom: 45px;
-            span{
+            span {
                 color: $orange;
             }
         }
@@ -514,15 +504,13 @@
                 padding: 55px 50px 50px;
                 &__img {
                     margin-bottom: 20px;
-                    i{
-                        &:before{
-                          font-size: 75px; 
-                          color: $green;  
-                          margin: 0 auto;
+                    i {
+                        &:before {
+                            font-size: 75px;
+                            color: $green;
+                            margin: 0 auto;
                         }
-                       
                     }
-                    
                 }
                 &__title {
                     margin-bottom: 20px;
@@ -534,12 +522,12 @@
                     margin-bottom: 20px;
                 }
                 &__link {
-                    a{
+                    a {
                         color: $orange;
                         padding: 10px 50px;
                         font-weight: 700;
-                        &:hover{
-                            text-decoration:underline;
+                        &:hover {
+                            text-decoration: underline;
                             color: #c53f12;
                         }
                     }
@@ -547,9 +535,58 @@
             }
         }
     }
-}
-.svg-inline--fa .fa-check-double .fa-w-16 {
-    fill: #46ad5b;
+    .choose {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            .choose-image {
+                img{
+                    max-width: 445px;
+                }
+            }
+            .choose-info {
+                padding: 70px 60px;
+                &__pre {
+                    color: $green;
+                    margin-bottom: 15px;
+                }
+                &__title {
+                    color: #000;
+                    margin-bottom: 30px;
+                    span{
+                        color: $orange;
+                    }
+                }
+                &__descr {
+                    margin-bottom: 35px;
+                }
+                &__list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li{
+                      margin-bottom: 25px; 
+                      flex-basis: 50%; 
+                      display: flex;
+                      align-items: center;
+                      i{
+                          &:before{
+                              font-size: 40px;
+                              color: $green;
+                              margin: 0 auto;
+                          }
+                      }
+                      span{
+                          margin-left: 15px;
+                          font-size: 20px;
+                          color: #000;
+                      }
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
 @import "_media.scss";
