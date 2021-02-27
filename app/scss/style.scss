@@ -857,6 +857,7 @@
                     padding: 0px 9px;
                     border-radius: 50%;
                     margin: 0 8px;
+                    cursor: pointer;
                     button {
                         font-size: 0;
                     }
@@ -869,7 +870,6 @@
                 display: flex;
                 justify-content: space-between;
                 outline: none;
-                transition: all 1s;
             }
             .clients-item {
                 max-width: 350px;
@@ -936,11 +936,11 @@
                     }
                     &-by {
                         margin-bottom: 15px;
-                        span{
+                        span {
                             position: relative;
                             padding-left: 16px;
                             font-size: 14px;
-                            &:before{
+                            &:before {
                                 position: absolute;
                                 font-family: "icomoon" !important;
                                 left: 0;
@@ -950,18 +950,18 @@
                             }
                         }
                         .by-admin {
-                            &:before{
-                                content: '\f007';
+                            &:before {
+                                content: "\f007";
                             }
                         }
                         .by-topic {
-                            &:before{
-                                content: '\f07b';
+                            &:before {
+                                content: "\f07b";
                             }
                         }
                         .by-comment {
-                            &:before{
-                                content: '\f086';
+                            &:before {
+                                content: "\f086";
                             }
                         }
                     }
@@ -973,9 +973,9 @@
                         a {
                             color: $orange;
                             font-weight: 700;
-                            &:hover{
-                              text-decoration: underline; 
-                              color: #c53f12; 
+                            &:hover {
+                                text-decoration: underline;
+                                color: #c53f12;
                             }
                         }
                     }
@@ -985,4 +985,195 @@
     }
 }
 
+.footer {
+    padding: 100px 30px 90px;
+    background-color: #181818;
+    color: #fff;
+    &-cols {
+        display: flex;
+        .footer-col {
+            width: 250px;
+            flex-grow: 1;
+            &:first-child {
+                flex-grow: 3;
+                padding-right: 50px;
+            }
+            &__logo {
+                margin-bottom: 20px;
+                &.title {
+                    a {
+                        font-size: 45px;
+                        span {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+            &__text {
+                font-size: 17px;
+            }
+            &__title {
+                font-size: 20px;
+                color: #dc4614;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+            &__list {
+                margin-bottom: 45px;
+                li {
+                    position: relative;
+                    padding-left: 25px;
+                    margin-bottom: 20px;
+                    &:before {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-family: "icomoon" !important;
+                        font-size: 20px;
+                    }
+                    &.footer-location {
+                        &:before {
+                            content: "\f041";
+                        }
+                    }
+                    &.footer-phone {
+                        &:before {
+                            content: "\f095";
+                        }
+                    }
+                    &.footer-email {
+                        &:before {
+                            content: "\f0e0";
+                        }
+                    }
+                }
+            }
+            &__social {
+                display: flex;
+                justify-content: left;
+                li {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    a {
+                        position: relative;
+                        padding: 8px 19px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        background-color: #181818;
+                        transition: all 0.2s;
+                        &:before {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            font-family: "icomoon" !important;
+                        }
+                        &:hover {
+                            background-color: #fff;
+
+                            &:before {
+                                color: #000;
+                            }
+                        }
+                    }
+                    &.twitter {
+                        a {
+                            &:before {
+                                content: "\f099";
+                            }
+                        }
+                    }
+                    &.facebook {
+                        a {
+                            &:before {
+                                content: "\f09a";
+                            }
+                        }
+                    }
+                    &.linkedin {
+                        a {
+                            &:before {
+                                content: "\f0e1";
+                            }
+                        }
+                    }
+                    &.instagram {
+                        a {
+                            &:before {
+                                content: "\f16d";
+                            }
+                        }
+                    }
+                }
+            }
+            &__links {
+                li {
+                    margin-bottom: 15px;
+                    a {
+                        position: relative;
+                        padding: 5px 10px 5px 25px;
+                        &:before {
+                            position: absolute;
+                            content: "\e902";
+                            font-family: "icomoon" !important;
+                            font-size: 20px;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            &__form {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                input {
+                    margin-bottom: 15px;
+                    padding: 10px 20px;
+                }
+                button {
+                    padding: 15px 25px;
+                    white-space: nowrap;
+                    font-size: 20px;
+                    background-color: $orange;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:hover {
+                        background-color: #e84a15;
+                    }
+                }
+                input,
+                button {
+                    border-radius: 3px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.footer-privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111111;
+    color: #fff;
+    padding: 30px 50px;
+    &__left {
+        &-text {
+        }
+    }
+    &__right {
+        display: flex;
+        li{
+            margin-right: 10px;
+            a{
+                padding: 15px;
+            }
+        }
+    }
+}
 @import "_media.scss";
