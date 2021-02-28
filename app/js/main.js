@@ -55,6 +55,24 @@ $(function () {
 
         }
     }());
+    $('.blog-pagination a').on('click', function(e){
+        $('.blog-pagination a').removeClass('active');
+        e.target.classList.add('active');
+
+    })
+
+    $(function() {
+        $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+        $('#back-to-top').fadeIn();
+        } else {
+        $('#back-to-top').fadeOut();
+        }
+        });
+        $('#back-to-top').on('click',function() {
+        $('body,html').animate({scrollTop:0},700);
+        });
+        });
     // $('.close-menu').on('click', function () {
     //     $('.header-navigation__list').removeClass('active');
     // })

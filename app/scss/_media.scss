@@ -1,5 +1,3 @@
-@media (max-width: 1300px) {
-}
 @media (max-width: 1170px) {
     .main-content .animal-slider__items .animal-slider__item .animal-slider__info-title {
         font-size: 50px;
@@ -62,7 +60,7 @@
     .main-content .price-items .price-item {
         max-width: 290px;
     }
-    .slick-initialized .slick-slide {
+    .main-content .clients-items .clients-item {
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -334,6 +332,12 @@
     .main-content .price-title {
         font-size: 45px;
     }
+    .main-content .clients {
+        padding: 50px 0 100px;
+    }
+    .main-content .blog {
+        padding: 50px 0;
+    }
 }
 @media (max-width: 600px) {
     .faq {
@@ -591,6 +595,4 @@
     .main-content .clients-pre{
         font-size: 23px;
     }
-}
-@media (max-width: 1070px) {
 }

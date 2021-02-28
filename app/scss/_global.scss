@@ -15,6 +15,26 @@ body {
     font-size: 16px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer-wrapper {
+    flex: 0 0 auto;
+}
+
 a {
     color: #fff;
     text-decoration: none;
@@ -60,7 +80,48 @@ select {
     font-size: 55px;
     font-weight: 800;
     color: #000;
-    span{
+    span {
         color: $orange;
+    }
+}
+
+#back-to-top {
+    position: fixed;
+    content: "";
+    right: 50px;
+    bottom: 70px;
+    display: flex;
+    a {
+        padding: 25px 25px;
+        background-color: $orange;
+        animation-duration: 4s;
+        border-radius: 5px;
+        animation-iteration-count: infinite;
+        animation-name: backToTop;
+        &:hover{
+            background-color: #e84a15;
+        }
+        &:before {
+            position: absolute;
+            left: 53%;
+            top: 50%;
+            transform: rotate(-90deg) translate(50%,-50%);
+            content: "\e900";
+            font-family: "icomoon" !important;
+            font-size: 25px;
+        }
+    }
+}
+
+@keyframes backToTop {
+    0% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }

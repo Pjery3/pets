@@ -323,7 +323,12 @@
 
     .form {
         background-color: #f2f2f4;
-
+        &.form-price {
+            background-color: #fff;
+        }
+        &.form-booking{
+            background-color: #fff;
+        }
         &-inner {
             display: flex;
             &__inputs {
@@ -560,6 +565,9 @@
         }
     }
     .choose {
+        &.choose-about {
+            background-color: #f2f2f4;
+        }
         &-inner {
             display: flex;
             justify-content: space-between;
@@ -717,13 +725,14 @@
                         width: 100%;
                         padding: 20px;
                         background-color: $green;
-                            white-space: nowrap;
-                            color: #000;
-                            transition: 0.2s;
-                            &:hover {
-                                color: #fff;
-                                background-color: #4ab660;
-                            }
+                        white-space: nowrap;
+                        color: #000;
+                        transition: 0.2s;
+                        cursor: pointer;
+                        &:hover {
+                            color: #fff;
+                            background-color: #4ab660;
+                        }
                     }
                 }
                 &.price-item--orange {
@@ -735,11 +744,11 @@
                     .price-item__bot {
                         &-btn {
                             color: #fff;
-                                background-color: $orange;
-                                &:hover {
-                                    background-color: #e84a15;
-                                    color: #fff;
-                                }
+                            background-color: $orange;
+                            &:hover {
+                                background-color: #e84a15;
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -864,6 +873,12 @@
         padding: 100px 0 150px;
         text-align: center;
         background-color: #f2f2f4;
+        &.clients-service {
+            background-color: #fff;
+            .clients-items .clients-item {
+                background-color: #f2f2f4;
+            }
+        }
         &-pre {
             margin-bottom: 20px;
         }
@@ -937,6 +952,37 @@
     .blog {
         padding: 100px 0;
         text-align: center;
+        &.blog-pages {
+            .blog-title {
+                margin-bottom: 20px;
+            }
+            .blog-items {
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+                .blog-item {
+                    margin-top: 30px;
+                }
+            }
+            .blog-pagination {
+                max-width: 1000px;
+                display: inline-block;
+                a {
+                    color: $orange;
+                    background-color: #fff;
+                    float: left;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    transition: background-color 0.3s;
+                    border: 1px solid #ddd;
+                    &.active {
+                        color: #fff;
+                        background-color: $orange;
+                        border: 1px solid $orange;
+                    }
+                    &:hover:not(.active) {background-color: #ddd;}
+                }
+            }
+        }
         &-pre {
             margin-bottom: 15px;
         }
