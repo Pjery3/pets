@@ -72,6 +72,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
         &__logo {
             a {
                 font-size: 40px;
@@ -105,18 +106,31 @@
             }
         }
     }
-    &-pagination {
+    &-navigation {
         background-color: #181818;
         padding: 0 40px;
+        position: relative;
         &__inner {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        &__burger {
+            display: none;
+            div {
+                width: 25px;
+                height: 2px;
+                background-color: #fff;
+                & + div {
+                    margin-top: 7px;
+                }
+            }
+        }
         &__list {
             display: flex;
             li {
                 position: relative;
+
                 &.pages-li {
                     &:hover {
                         .pages-dropdown {
@@ -150,6 +164,20 @@
                     font-size: 18px;
                     letter-spacing: 1px;
                     display: block;
+                    &.close-menu {
+                        position: relative;
+                        padding: 25px 0;
+                        &:before {
+                            position: absolute;
+                            font-family: "icomoon" !important;
+                            content: "\f00d";
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            color: #000;
+                            font-size: 25px;
+                        }
+                    }
                     &.pages-arrow {
                         position: relative;
                         padding-right: 25px;
@@ -176,6 +204,7 @@
         }
         &__btn {
             font-size: 20px;
+            // white-space: nowrap;
             a {
                 padding: 10px 15px;
                 background-color: #ed6436;
@@ -294,10 +323,11 @@
 
     .form {
         background-color: #f2f2f4;
+
         &-inner {
             display: flex;
             &__inputs {
-                padding: 90px 0 70px;
+                padding: 90px 10px 70px;
                 max-width: 445px;
                 width: 100%;
                 background-color: $orange;
@@ -371,6 +401,7 @@
                     .form-item {
                         max-width: 250px;
                         flex-basis: 50%;
+                        padding: 10px;
                         &__top {
                             display: flex;
                             align-items: center;
@@ -408,6 +439,7 @@
             align-items: center;
             .about-info {
                 max-width: 570px;
+                padding-right: 30px;
                 &__pre {
                     color: $green;
                     margin-bottom: 20px;
@@ -492,8 +524,8 @@
             .services-item {
                 max-width: 350px;
                 background-color: #fff;
-                margin-bottom: 30px;
-                padding: 55px 50px 50px;
+                margin: 10px;
+                padding: 55px 30px 50px;
                 &__img {
                     margin-bottom: 20px;
                     i {
@@ -682,9 +714,9 @@
                     }
                     &-btn {
                         margin-top: 50px;
-                        a {
-                            padding: 20px 130px;
-                            background-color: $green;
+                        width: 100%;
+                        padding: 20px;
+                        background-color: $green;
                             white-space: nowrap;
                             color: #000;
                             transition: 0.2s;
@@ -692,7 +724,6 @@
                                 color: #fff;
                                 background-color: #4ab660;
                             }
-                        }
                     }
                 }
                 &.price-item--orange {
@@ -703,14 +734,12 @@
                     }
                     .price-item__bot {
                         &-btn {
-                            a {
-                                color: #fff;
+                            color: #fff;
                                 background-color: $orange;
                                 &:hover {
                                     background-color: #e84a15;
                                     color: #fff;
                                 }
-                            }
                         }
                     }
                 }
@@ -922,7 +951,7 @@
                 text-align: left;
                 &__img {
                     img {
-                        max-width: 350px;
+                        max-width: 100%;
                     }
                 }
                 &__info {
@@ -1168,9 +1197,9 @@
     }
     &__right {
         display: flex;
-        li{
+        li {
             margin-right: 10px;
-            a{
+            a {
                 padding: 15px;
             }
         }
